@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+)
+
+
+// func main() {
+// 	count:=1
+// 	if count<5{
+// 		count:=10;
+// 		count++;
+// 	}
+// 	fmt.Println(count==11)
+// }
+
+func main() {
+	count:=1
+	if count<5{
+		count=10;
+		count++;
+	}
+	fmt.Println(count==11)
+}
