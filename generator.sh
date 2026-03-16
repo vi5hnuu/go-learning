@@ -13,7 +13,7 @@ mkdir -p "$DIR"
 
 i=$START
 END=$((START + MAX))
-while [ $i -le $END ]
+while [ $i -lt $END ]
 do
   FILE="$DIR/example-$i.go"
 
