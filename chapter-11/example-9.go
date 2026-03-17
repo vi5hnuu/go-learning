@@ -1,9 +1,16 @@
 package main
 
 import (
-    "fmt"
+	"errors"
+	"log"
 )
 
 func main() {
-    fmt.Println("example-9")
+    log.SetFlags(log.Ldate | log.Lmicroseconds | log.Llongfile)
+    log.Println("Start of example-9")
+    err := errors.New("Application aborted")
+    if err != nil {
+        log.Fatalln(err)
+    }
+    log.Println("End of example-9")
 }
